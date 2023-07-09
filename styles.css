@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap");
+
+* {
+  font-family: "Share Tech Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  z-index: 100;
+  background-color: #9b59b6;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0px 3px 3px #000;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: flex;
+  font-size: 20px;
+  padding: 25px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  background: rgba(34, 195, 58, 1);
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+.welcome-section {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(34, 195, 58);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 58, 1) 0%,
+    rgba(135, 45, 253, 1) 100%
+  );
+}
+
+.welcome-section > h1 {
+  font-size: 42pt;
+}
+
+.welcome-section > p {
+  font-style: italic;
+  font-size: 18pt;
+}
+
+.projects-section {
+  background: rgba(34, 195, 58, 1);
+  text-align: center;
+  padding: 150px 75px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 35px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-image {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project {
+  background: black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px #000;
+  text-decoration: none;
+}
+
+.code {
+  color: black;
+  font-size: 16pt;
+  transition: color 0.3s cubic-bezier(0.47, 0, 0.74, 0.71);
+}
+
+.project:hover .code {
+  color: yellow;
+}
+
+.project-tile {
+  padding: 20px 0px;
+  font-size: 14pt;
+  color: white;
+}
+
+.projects-section-header {
+  max-width: 720px;
+  font-size: 32pt;
+  margin: 0 auto 60px auto;
+  border-bottom: 5px solid;
+}
+
+.gotcha {
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.gotcha:hover {
+  -webkit-transform: rotate(5940deg);
+  -ms-transform: rotate(5940deg);
+  transform: rotate(5940deg);
+}
+
+.contact-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 88vh;
+  background-image: url(http://www.geometricalanalysis.com/wp-content/uploads/2016/04/VORTEX-180.png);
+}
+
+.contact-section-header {
+  color: white;
+  font-size: 38pt;
+}
+
+footer > p {
+  padding: 20px;
+  border-top: 2.5px solid black;
+}
+
+.contact-links {
+  padding: 40px;
+}
+
+#profile-link {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    background: green;
+  }
+}
